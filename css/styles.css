@@ -414,7 +414,7 @@ About
 .about-img {
   justify-self: center;
 }
-.about-info{
+.about-info {
   position: relative;
   text-align: center;
 }
@@ -614,6 +614,7 @@ Connect
   -o-object-fit: cover;
   object-fit: cover;
   z-index: -2;
+  background: var(--clr-grey-9);
 }
 .connect::after {
   content: "";
@@ -701,7 +702,6 @@ Skills
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   color: var(--clr-primary-1);
-  
 }
 .skill-container {
   background: var(--clr-white);
