@@ -374,7 +374,7 @@ Hero
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-img::before {
+  /* .about-img::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -383,15 +383,11 @@ Hero
     top: 2rem;
     right: -2rem;
     border-radius: var(--radius);
-  }
+  } */
 }
 .hero-photo {
   max-width: 25rem;
-  max-height: 30rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: var(--radius);
-  position: relative;
+  height: 25rem;
 }
 
 /*
@@ -413,6 +409,10 @@ About
 .about-img {
   justify-self: center;
 }
+.about-photo {
+  max-width: 20rem;
+  height: 20rem;
+}
 @media screen and (min-width: 992px) {
   .about-center {
     grid-template-columns: 1fr 1fr;
@@ -420,9 +420,9 @@ About
   .about-img {
     position: relative;
   }
-  .about-img::before {
+  /* .about-img::before {
     left: -2rem;
-  }
+  } */
   .about-info {
     align-self: center;
   }
