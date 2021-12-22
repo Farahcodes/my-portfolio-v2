@@ -46,7 +46,11 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
+
+  /* smooth scroll */
+  scroll-behavior: smooth;
 }
+
 /*
 =============== 
 Global Styles
@@ -308,7 +312,8 @@ Sidebar
   display: grid;
   margin-top: 3rem;
   width: 20rem;
-  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 .social-icon {
@@ -334,6 +339,11 @@ Sidebar
 }
 .close-btn:hover {
   color: #e66b6b;
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }
 /*
 =============== 
